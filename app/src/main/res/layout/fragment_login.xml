@@ -24,10 +24,11 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_margin="15dp"
-            android:backgroundTint="#4dc3ff"
+            android:backgroundTint="#16a085"
             android:textAllCaps="false"
             android:textSize="14dp"
-            android:text="@string/patient"/>
+            android:text="@string/patient"
+            android:textColor="#ecf0f1"/>
 
         <Button
             android:id="@+id/login_therapist_button"
@@ -37,10 +38,11 @@
             android:layout_below="@id/login_patient_button"
             android:layout_margin="15dp"
             android:padding="15dp"
-            android:backgroundTint="#3fd9a3"
+            android:backgroundTint="#2980b9"
             android:textAllCaps="false"
             android:textSize="15dp"
-            android:text="@string/therapist"/>
+            android:text="@string/therapist"
+            android:textColor="#ecf0f1"/>
     </RelativeLayout>
 
 </RelativeLayout>

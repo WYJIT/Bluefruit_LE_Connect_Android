@@ -31,9 +31,10 @@ public class PatientHomeFragment extends Fragment {
         exercisesAdapter = new ExercisesAdapter(getContext(), exercises);
         exercisesListView = (ListView) view.findViewById(R.id.exercise_list);
         exercisesListView.setAdapter(exercisesAdapter);
-        exercises.add(new Exercise("Squats", false));
-        exercises.add(new Exercise("Lunges", false));
-        exercises.add(new Exercise("Leg lifts", false));
+        exercises.add(new Exercise("Bicep curls", false));
+        exercises.add(new Exercise("Arm circles", true));
+        exercises.add(new Exercise("Side raises", true));
+        exercises.add(new Exercise("Bent over reverse fly", true));
         exercisesAdapter.notifyDataSetChanged();
 
 

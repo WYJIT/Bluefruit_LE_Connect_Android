@@ -19,7 +19,7 @@
 
     <!-- Patient -->
     <!-- Patient Home -->
-    <string name="patient_today">Daily Tasks</string>
+    <string name="patient_today">DAILY TASKS</string>
 
     <!-- Patient Exercise Summary -->
     <string name="squats">Squats</string>

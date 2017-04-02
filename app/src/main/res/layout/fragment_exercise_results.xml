@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="Bicep curls results" />
+    
+
+    <TextView
+        android:id="@+id/fatigue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/exercise_name"
+        android:textSize="18dp"
+        android:text="Fatigue" />
+
+    <ImageView
+        android:id="@+id/fatigue_image"
+        android:layout_width="1700dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fatigue_text"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/fatigue"/>
+
+    <TextView
+        android:id="@+id/improvement_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fatigue_image"
+        android:textSize="18dp"
+        android:text="Improvement" />
+
+    <ImageView
+        android:id="@+id/improvement_image"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/improvement_text"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/improvement"/>
+    <Button
+        android:id="@+id/return_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:text="Return home"
+        android:backgroundTint="#16a085"
+        android:textColor="#ecf0f1"/>
+
+</RelativeLayout>

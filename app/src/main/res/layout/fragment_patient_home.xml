@@ -11,6 +11,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:textSize="20dp"
+
         android:text="@string/patient_today"/>
     <TextView
         android:id="@+id/updated"

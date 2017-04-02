@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.adafruit.bluefruit.le.connect.R;
@@ -34,15 +35,21 @@ public class ExercisesAdapter extends ArrayAdapter<Exercise> {
         }
         // Lookup the view to populate items
         TextView name = (TextView) convertView.findViewById(R.id.exercise_name);
+        CheckBox checkBox = (CheckBox) convertView.findViewById(R.id.checkbox);
         // Populate the data into the template view using the data object
         name.setText(exercise.getName());
 
-        convertView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                patientActivity.transitionToFragment(new ExerciseSummaryFragment());
-            }
-        });
+        boolean completed = exercise.getCompleted();
+        checkBox.setChecked(completed);
+
+        if (!completed) {
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    patientActivity.transitionToFragment(new ExerciseSummaryFragment());
+                }
+            });
+        }
 
         // Return completed view to render on screen
         return convertView;
