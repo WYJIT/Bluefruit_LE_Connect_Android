@@ -1,119 +1,163 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.adafruit.bluefruit.le.connect.PT.MeetingSummaryFragment">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/patient_name"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="20dp"
-        android:text="Wilson" />
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
 
-    <ImageView
-        android:id="@+id/patient_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/patient_name"
-        android:src="@drawable/exercise"/>
+        <TextView
+            android:id="@+id/patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="Wilson" />
 
-    <TextView
-        android:id="@+id/gender"
-        android:layout_toRightOf="@+id/patient_image"
-        android:layout_below="@id/patient_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="male"/>
+        <ImageView
+            android:id="@+id/patient_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/patient_name"
+            android:src="@drawable/exercise"/>
 
-    <TextView
-        android:id="@+id/age"
-        android:layout_toRightOf="@+id/patient_image"
-        android:layout_below="@id/gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="63 years old"/>
+        <TextView
+            android:id="@+id/gender"
+            android:layout_toRightOf="@+id/patient_image"
+            android:layout_below="@id/patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="male"/>
 
-    <TextView
-        android:id="@+id/weight"
-        android:layout_toRightOf="@+id/patient_image"
-        android:layout_below="@id/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="152 lbs"/>
+        <TextView
+            android:id="@+id/age"
+            android:layout_toRightOf="@+id/patient_image"
+            android:layout_below="@id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="63 years old"/>
 
-    <TextView
-        android:id="@+id/height"
-        android:layout_toRightOf="@+id/patient_image"
-        android:layout_below="@id/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="5 feet 7 inches"/>
+        <TextView
+            android:id="@+id/weight"
+            android:layout_toRightOf="@+id/patient_image"
+            android:layout_below="@id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="152 lbs"/>
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_toRightOf="@+id/patient_image"
+            android:layout_below="@id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="5 feet 7 inches"/>
 
 
-    <TextView
-        android:id="@+id/injury"
-        android:layout_toRightOf="@+id/patient_image"
-        android:layout_below="@id/height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="Injury description"/>
+        <TextView
+            android:id="@+id/injury"
+            android:layout_toRightOf="@+id/patient_image"
+            android:layout_below="@id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="Injury description"/>
 
-    <TextView
-        android:id="@+id/progress"
-        android:layout_below="@id/patient_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="Progress"/>
+        <TextView
+            android:id="@+id/progress"
+            android:layout_below="@id/patient_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="Progress"/>
 
-    <ImageView
-        android:id="@+id/progress_image"
-        android:layout_below="@id/progress"
-        android:layout_width="204dp"
-        android:layout_height="144dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/improvement"/>
+        <ImageView
+            android:id="@+id/progress_image"
+            android:layout_below="@id/progress"
+            android:layout_width="204dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/improvement"/>
 
-    <TextView
-        android:id="@+id/exercises"
-        android:layout_below="@id/progress_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="Exercises"/>
+        <TextView
+            android:id="@+id/exercises"
+            android:layout_below="@id/progress_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="Exercises"/>
 
-    <TextView
-        android:id="@+id/Note"
-        android:layout_below="@id/exercises"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:textSize="17dp"
-        android:text="Notes"/>
-</RelativeLayout>
+        <ListView
+            android:id="@+id/patient_exercise_list"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exercises"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ListView>
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_below="@id/patient_exercise_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17dp"
+            android:text="Notes"/>
+
+
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="example notes"
+            android:layout_below="@+id/note"
+            android:layout_alignStart="@+id/note"
+            android:layout_alignEnd="@+id/weight" />
+
+        <Button
+            android:id="@+id/enter_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Enter"
+            android:layout_alignBaseline="@+id/edit_note"
+            android:layout_alignBottom="@+id/edit_note"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

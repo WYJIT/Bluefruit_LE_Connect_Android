@@ -14,8 +14,8 @@ public class Patient {
 
     public Patient(String name, Integer age, String gender, Integer weight, Integer height) {
         this.name = name;
-        this.age = age;
         this.gender = gender;
+        this.age = age;
         this.weight = weight;
         this.height = height;
     }
