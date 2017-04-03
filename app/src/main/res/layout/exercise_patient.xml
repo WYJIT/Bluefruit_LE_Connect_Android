@@ -3,11 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <RadioButton
+    <!--<RadioButton-->
+        <!--android:id="@+id/checkbox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"/>-->
+    <CheckBox
         android:id="@+id/checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:clickable="false"/>
 
     <TextView
         android:id="@+id/exercise_name"
@@ -17,7 +23,6 @@
         android:layout_toRightOf="@id/checkbox"
         android:layout_margin="10dp"
         android:textSize="15dp"/>
-        <!--android:background="#99e6ff"-->
 
 
 </RelativeLayout>

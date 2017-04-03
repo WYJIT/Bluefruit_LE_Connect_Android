@@ -19,6 +19,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/exercise_name"
+        android:layout_marginTop="15dp"
         android:src="@drawable/exercise"/>
 
     <TextView
@@ -59,7 +60,9 @@
         android:layout_marginBottom="50dp"
         android:textAllCaps="false"
         android:textSize="15dp"
-        android:text="Start"/>
+        android:text="Start"
+        android:backgroundTint="#16a085"
+        android:textColor="#ecf0f1"/>
 
 
 </RelativeLayout>
