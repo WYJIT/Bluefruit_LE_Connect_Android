@@ -18,6 +18,7 @@ public class MeetingSummaryFragment extends Fragment {
     private Integer age;
     private Integer weight;
     private Integer height;
+    private String gender;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MeetingSummaryFragment extends Fragment {
         Bundle args = getArguments();
         name = args.getString("name");
         age = args.getInt("age");
+        gender = args.getString("gender");
         weight = args.getInt("weight");
         height = args.getInt("height");
     }
@@ -37,10 +39,16 @@ public class MeetingSummaryFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_meeting_summary, container, false);
 
         TextView nameTag = (TextView) view.findViewById(R.id.patient_name);
-        TextView summaryTag = (TextView) view.findViewById(R.id.patient_summary);
+        TextView ageTag = (TextView) view.findViewById(R.id.age);
+        TextView genderTag = (TextView) view.findViewById(R.id.gender);
+        TextView weightTag = (TextView) view.findViewById(R.id.weight);
+        TextView heightTag = (TextView) view.findViewById(R.id.height);
 
         nameTag.setText(name);
-        summaryTag.setText(Integer.toString(age) + " years old, " + Integer.toString(weight) + " lbs, " + Integer.toString(height) + " feet");
+        ageTag.setText(Integer.toString(age) + " years old");
+        genderTag.setText(gender);
+        weightTag.setText(Integer.toString(weight) + " lbs");
+        heightTag.setText(Integer.toString(height) + " feet");
 
         return view;
     }

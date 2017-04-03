@@ -28,6 +28,10 @@ public class Meeting {
         return this.patient.getAge();
     }
 
+    public String getPatientGender() {
+        return this.patient.getGender();
+    }
+
     public Integer getPatientWeight() {
         return this.patient.getWeight();
     }

@@ -7,19 +7,25 @@ package com.adafruit.bluefruit.le.connect.PT;
 public class Patient {
     private String name;
     private Integer age;
+    private String gender;
     private Integer weight;
     private Integer height;
     // TODO: add more info for patients
 
-    public Patient(String name, Integer age, Integer weight, Integer height) {
+    public Patient(String name, Integer age, String gender, Integer weight, Integer height) {
         this.name = name;
         this.age = age;
+        this.gender = gender;
         this.weight = weight;
         this.height = height;
     }
 
     public Integer getAge() {
         return this.age;
+    }
+
+    public String getGender() {
+        return this.gender;
     }
 
     public Integer getWeight() {

@@ -47,6 +47,7 @@ public class MeetingsAdapter extends ArrayAdapter<Meeting> {
                 Bundle args = new Bundle();
                 args.putString("name", meeting.getPatientName());
                 args.putInt("age", meeting.getPatientAge());
+                args.putString("gender", meeting.getPatientGender());
                 args.putInt("weight", meeting.getPatientWeight());
                 args.putInt("height", meeting.getPatientHeight());
                 f.setArguments(args);
