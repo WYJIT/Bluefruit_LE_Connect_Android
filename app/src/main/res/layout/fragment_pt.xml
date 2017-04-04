@@ -13,19 +13,28 @@
 
 
     <TextView
-        android:id="@+id/today"
+        android:id="@+id/PT_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:textSize="20dp"
-        android:text="@string/pt_today"/>
+        android:text="Patients"/>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PT_home"
+        android:hint="type and search">
+
+    </SearchView>
 
     <ListView
         android:id="@+id/meeting_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/today"
+        android:layout_below="@id/search"
         android:layout_margin="10dp">
     </ListView>
 

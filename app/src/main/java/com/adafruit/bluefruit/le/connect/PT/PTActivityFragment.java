@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import com.adafruit.bluefruit.le.connect.R;
 
@@ -22,6 +23,7 @@ public class PTActivityFragment extends Fragment {
     private MeetingsAdapter meetingsAdapter;
     private ListView meetingListView;
     private ArrayList<Meeting> meetings;
+    private SearchView mSearch;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,6 +33,8 @@ public class PTActivityFragment extends Fragment {
         meetings = new ArrayList<>();
         meetingsAdapter = new MeetingsAdapter(getContext(), meetings);
         meetingListView = (ListView) view.findViewById(R.id.meeting_list);
+        mSearch = (SearchView) view.findViewById(R.id.search);
+        mSearch.setQueryHint("Type and search for patients");
         meetingListView.setAdapter(meetingsAdapter);
 
         // add an example appointment
