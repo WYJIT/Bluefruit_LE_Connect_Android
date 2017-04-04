@@ -26,6 +26,11 @@
     <!-- PT Home -->
     <string name="pt_today">Appointments</string>
 
+    <!-- PT Menu -->
+    <string name="messages">Messages</string>
+    <string name="home">Home</string>
+    <string name="patients">Patients</string>
+
     <!-- Bluetooth Adapter -->
     <string name="dialog_error_no_ble">Bluetooth Low Energy not supported</string>
     <string name="dialog_error_no_bluetooth">Bluetooth not available</string>

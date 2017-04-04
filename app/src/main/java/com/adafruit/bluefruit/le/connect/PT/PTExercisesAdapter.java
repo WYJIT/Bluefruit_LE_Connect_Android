@@ -9,8 +9,6 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.adafruit.bluefruit.le.connect.Patient.Exercise;
-import com.adafruit.bluefruit.le.connect.Patient.ExerciseSummaryFragment;
-import com.adafruit.bluefruit.le.connect.Patient.PatientActivity;
 import com.adafruit.bluefruit.le.connect.R;
 
 import java.util.ArrayList;
@@ -43,6 +41,12 @@ public class PTExercisesAdapter extends ArrayAdapter<Exercise> {
         // Populate the data into the template view using the data object
         name.setText(exercise.getName());
 
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PTActivity.transitionToFragment(new PTExersiceSummaryFragment());
+            }
+        });
         // Return completed view to render on screen
         return convertView;
     }
