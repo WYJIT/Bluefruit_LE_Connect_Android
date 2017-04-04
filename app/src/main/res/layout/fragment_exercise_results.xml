@@ -10,45 +10,126 @@
         android:layout_marginLeft="20dp"
         android:textSize="20dp"
         android:text="Bicep curls results" />
-    
 
-    <TextView
-        android:id="@+id/fatigue_text"
+    <RelativeLayout
+        android:id="@+id/graphs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/exercise_name"
-        android:textSize="18dp"
-        android:text="Fatigue" />
+        android:layout_below="@id/exercise_name">
 
-    <ImageView
-        android:id="@+id/fatigue_image"
-        android:layout_width="1700dp"
-        android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/fatigue_text"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/fatigue"/>
+        <LinearLayout
+            android:id="@+id/graph_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fatigue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:textSize="18dp"
+                android:text="Fatigue" />
+
+            <TextView
+                android:id="@+id/improvement_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:textSize="18dp"
+                android:text="Improvement" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_below="@id/graph_text"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/fatigue_image"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:src="@drawable/fatigue"/>
+
+            <ImageView
+                android:id="@+id/improvement_image"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:src="@drawable/improvement"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/fatigue_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/exercise_name"-->
+        <!--android:textSize="18dp"-->
+        <!--android:text="Fatigue" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/fatigue_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/fatigue_text"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:src="@drawable/fatigue"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/improvement_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/fatigue_image"-->
+        <!--android:textSize="18dp"-->
+        <!--android:text="Improvement" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/improvement_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/improvement_text"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:src="@drawable/improvement"/>-->
+
 
     <TextView
-        android:id="@+id/improvement_text"
+        android:id="@+id/notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/fatigue_image"
-        android:textSize="18dp"
-        android:text="Improvement" />
+        android:layout_below="@id/graphs"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="Notes"/>
 
-    <ImageView
-        android:id="@+id/improvement_image"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/improvement_text"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/improvement"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notes"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="15dp"/>
+
     <Button
         android:id="@+id/return_home_button"
         android:layout_width="wrap_content"
