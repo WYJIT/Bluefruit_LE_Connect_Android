@@ -30,6 +30,7 @@
     <string name="messages">Messages</string>
     <string name="home">Home</string>
     <string name="patients">Patients</string>
+    <string name="profile">Profile</string>
 
     <!-- Bluetooth Adapter -->
     <string name="dialog_error_no_ble">Bluetooth Low Energy not supported</string>
