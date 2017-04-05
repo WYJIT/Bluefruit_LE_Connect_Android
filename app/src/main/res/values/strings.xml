@@ -24,7 +24,6 @@
 
     <!-- PT -->
     <!-- PT Home -->
-    <string name="pt_today">Appointments</string>
 
     <!-- PT Menu -->
     <string name="messages">Messages</string>
@@ -431,7 +430,6 @@
     <string name="title_activity_pt">PTActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Debug -->
 

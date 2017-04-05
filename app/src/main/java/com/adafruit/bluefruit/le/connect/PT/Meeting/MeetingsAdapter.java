@@ -1,4 +1,4 @@
-package com.adafruit.bluefruit.le.connect.PT;
+package com.adafruit.bluefruit.le.connect.PT.Meeting;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.adafruit.bluefruit.le.connect.PT.PatientSummaryFragment;
+import com.adafruit.bluefruit.le.connect.PT.PTActivity;
 import com.adafruit.bluefruit.le.connect.R;
 
 import java.util.ArrayList;
@@ -42,7 +44,7 @@ public class MeetingsAdapter extends ArrayAdapter<Meeting> {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MeetingSummaryFragment f = new MeetingSummaryFragment();
+                PatientSummaryFragment f = new PatientSummaryFragment();
                 // supply patient info
                 Bundle args = new Bundle();
                 args.putString("name", meeting.getPatientName());
