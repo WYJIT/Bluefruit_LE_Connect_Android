@@ -3,22 +3,21 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <ImageView
         android:id="@+id/message_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:textSize="15dp"
-        android:text="pic here"
-        />
+        android:src="@drawable/person"/>
 
     <TextView
         android:id="@+id/patient_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/message_pic"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
         android:textSize="15dp"
         android:text="Yuzhong"/>
 
@@ -29,9 +28,8 @@
         android:layout_below="@id/patient_name"
         android:layout_toRightOf="@id/message_pic"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="0dp"
+        android:layout_marginLeft="10dp"
         android:textSize="15dp"
         android:text="Hello! I have a question about my exercises..."/>
-
 
 </RelativeLayout>
