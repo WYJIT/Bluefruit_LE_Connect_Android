@@ -29,6 +29,7 @@ public class PTActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.messages:
+                        transitionToFragment(new MessageFragment());
                         break;
                     case R.id.patients:
                         transitionToFragment(new PTActivityFragment());

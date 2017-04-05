@@ -1,4 +1,6 @@
-package com.adafruit.bluefruit.le.connect.PT;
+package com.adafruit.bluefruit.le.connect.PT.Meeting;
+
+import com.adafruit.bluefruit.le.connect.PT.Patient;
 
 import java.sql.Date;
 import java.sql.Time;

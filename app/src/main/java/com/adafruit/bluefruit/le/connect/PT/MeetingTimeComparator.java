@@ -1,5 +1,7 @@
 package com.adafruit.bluefruit.le.connect.PT;
 
+import com.adafruit.bluefruit.le.connect.PT.Meeting.Meeting;
+
 import java.util.Comparator;
 
 /**

@@ -21,7 +21,7 @@ import com.adafruit.bluefruit.le.connect.R;
 
 import java.util.ArrayList;
 
-public class MeetingSummaryFragment extends Fragment {
+public class PatientSummaryFragment extends Fragment {
     private View view;
 
     private String name;

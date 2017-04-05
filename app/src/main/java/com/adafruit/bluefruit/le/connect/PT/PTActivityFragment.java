@@ -10,6 +10,8 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import com.adafruit.bluefruit.le.connect.PT.Meeting.Meeting;
+import com.adafruit.bluefruit.le.connect.PT.Meeting.MeetingsAdapter;
 import com.adafruit.bluefruit.le.connect.R;
 
 import java.sql.Date;
@@ -39,9 +41,9 @@ public class PTActivityFragment extends Fragment {
         meetings = new ArrayList<>();
         meetingsAdapter = new MeetingsAdapter(getContext(), meetings);
         meetingListView = (ListView) view.findViewById(R.id.meeting_list);
+        meetingListView.setAdapter(meetingsAdapter);
         mSearch = (SearchView) view.findViewById(R.id.search);
         mSearch.setQueryHint("Type and search for patients");
-        meetingListView.setAdapter(meetingsAdapter);
 
         meetingSortButton = (TextView) view.findViewById(R.id.meeting_text);
         prioritySortButton = (TextView) view.findViewById(R.id.priority_text);
