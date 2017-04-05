@@ -2,6 +2,8 @@ package com.adafruit.bluefruit.le.connect.Patient;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,13 +34,19 @@ public class ExerciseSummaryFragment extends Fragment {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PatientActivity activity = (PatientActivity) getActivity();
-                activity.transitionToFragment(new ExerciseResultsFragment());
+                transitionToFragment(new ExerciseResultsFragment());
             }
         });
 
 
         return view;
+    }
+
+    public void transitionToFragment(Fragment fragment) {
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        FragmentTransaction transaction = fm.beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.commit();
     }
 
 }

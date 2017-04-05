@@ -4,8 +4,8 @@
     <drawable name="default_textcolor">#B8B8B8</drawable>
     <drawable name="default_infotextcolor">#7c7c7c</drawable>
     <drawable name="bottom_bar">#2980b9</drawable>
-    <drawable name="priority1">#80D7FF</drawable>
-    <drawable name="priority2">#F2ff80</drawable>
-    <drawable name="priority3">#FF80AA</drawable>
+    <drawable name="priority1">#bcf6ea</drawable>
+    <drawable name="priority2">#78edd5</drawable>
+    <drawable name="priority3">#16a085</drawable>
 
 </resources>
