@@ -10,16 +10,16 @@
         android:title="@string/messages"
         app:showAsAction="always" />
     <item
-        android:id="@+id/home"
-        android:enabled="true"
-        android:icon="@drawable/home"
-        android:title="@string/home"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/patients"
         android:enabled="true"
         android:icon="@drawable/patients"
         android:title="@string/patients"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/pt_summary"
+        android:enabled="true"
+        android:icon="@drawable/person_outline"
+        android:title="@string/profile"
         app:showAsAction="always" />
 
 </menu>

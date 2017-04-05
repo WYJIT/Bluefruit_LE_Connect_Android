@@ -31,11 +31,11 @@ public class PTActivity extends AppCompatActivity {
                     case R.id.messages:
                         transitionToFragment(new MessageFragment());
                         break;
-                    case R.id.home:
+                    case R.id.patients:
                         transitionToFragment(new PTActivityFragment());
                         break;
-                    case R.id.patients:
-                        transitionToFragment(new PTExersiceSummaryFragment());
+                    case R.id.pt_summary:
+                        transitionToFragment(new PTProfileFragment());
                         break;
                 }
                 return true;
