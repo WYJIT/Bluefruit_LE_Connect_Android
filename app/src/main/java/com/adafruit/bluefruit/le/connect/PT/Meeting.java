@@ -2,6 +2,7 @@ package com.adafruit.bluefruit.le.connect.PT;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.util.Comparator;
 
 /**
  * Created by yhuang on 2/21/2017.
@@ -42,5 +43,13 @@ public class Meeting {
 
     public String getStartTime() {
         return this.start.toString();
+    }
+
+    public int getStart() {
+        return this.start.getHours();
+    }
+
+    public int getPatientPriority() {
+        return this.patient.getPriority();
     }
 }

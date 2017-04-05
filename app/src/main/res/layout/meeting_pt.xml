@@ -4,20 +4,31 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/meeting_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textSize="15dp"
-        />
-
-    <TextView
         android:id="@+id/meeting_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/meeting_time"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/meeting_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/priority"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="65dp"
         android:textSize="15dp"/>
 
 </RelativeLayout>

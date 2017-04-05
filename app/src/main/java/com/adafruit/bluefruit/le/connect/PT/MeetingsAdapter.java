@@ -35,9 +35,27 @@ public class MeetingsAdapter extends ArrayAdapter<Meeting> {
         // Lookup the view to populate items
         TextView name = (TextView) convertView.findViewById(R.id.meeting_name);
         TextView time = (TextView) convertView.findViewById(R.id.meeting_time);
+        TextView priority = (TextView) convertView.findViewById(R.id.priority);
         // Populate the data into the template view using the data object
         name.setText(meeting.getPatientName());
         time.setText(meeting.getStartTime());
+        priority.setText(Integer.toString(meeting.getPatientPriority()));
+
+        int color;
+
+        int priorityNum = meeting.getPatientPriority();
+
+        switch (priorityNum) {
+            case 1:
+                convertView.setBackgroundColor(getContext().getResources().getColor(R.drawable.priority1));
+                break;
+            case 2:
+                convertView.setBackgroundColor(getContext().getResources().getColor(R.drawable.priority2));
+                break;
+            case 3:
+                convertView.setBackgroundColor(getContext().getResources().getColor(R.drawable.priority3));
+                break;
+        }
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -10,14 +10,16 @@ public class Patient {
     private String gender;
     private Integer weight;
     private Integer height;
+    private int priority;
     // TODO: add more info for patients
 
-    public Patient(String name, Integer age, String gender, Integer weight, Integer height) {
+    public Patient(String name, Integer age, String gender, Integer weight, Integer height, int priority) {
         this.name = name;
         this.gender = gender;
         this.age = age;
         this.weight = weight;
         this.height = height;
+        this.priority = priority;
     }
 
     public Integer getAge() {
@@ -38,5 +40,9 @@ public class Patient {
 
     public String getName() {
         return this.name;
+    }
+
+    public int getPriority() {
+        return this.priority;
     }
 }

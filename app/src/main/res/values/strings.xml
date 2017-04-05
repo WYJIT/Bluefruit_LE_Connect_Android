@@ -25,6 +25,8 @@
     <!-- PT -->
     <!-- PT Home -->
     <string name="pt_today">Appointments</string>
+    <string name="appt_time">appt time</string>
+    <string name="priority">priority</string>
 
     <!-- PT Menu -->
     <string name="messages">Messages</string>
