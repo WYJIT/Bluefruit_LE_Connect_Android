@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context="com.adafruit.bluefruit.le.connect.Patient.ExerciseSummaryFragment">
+
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:text="Congratulations!" />
+
+    <TextView
+        android:id="@+id/rep_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/exercise_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="#f2f2f2"
+        android:text="Daily straight leg raises completed!" />
+
+    <ImageView
+        android:id="@+id/progress_image"
+        android:layout_below="@id/rep_count"
+        android:layout_width="204dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/improvement"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_image"
+        android:background="#404040"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#f2f2f2"
+            android:textSize="17dp"
+            android:text="2 extra reps!"/>
+
+        <TextView
+            android:id="@+id/details2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#f2f2f2"
+            android:textSize="15dp"
+            android:text="7 day streak! "/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:text="Finish"
+        android:backgroundTint="#262626"
+        android:textColor="#0099ff"/>
+
+
+</RelativeLayout>

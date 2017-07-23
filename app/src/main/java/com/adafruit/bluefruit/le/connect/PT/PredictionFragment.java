@@ -16,7 +16,7 @@ import com.adafruit.bluefruit.le.connect.R;
  * Created by Jordan on 4/3/17.
  */
 
-public class PTExersiceSummaryFragment extends Fragment {
+public class PredictionFragment extends Fragment {
     private Button recordButton;
     private View view;
 
@@ -30,7 +30,6 @@ public class PTExersiceSummaryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_pt_exercise_summary, container, false);
-
 
         return view;
     }

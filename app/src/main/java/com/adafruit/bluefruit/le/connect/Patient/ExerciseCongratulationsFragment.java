@@ -15,7 +15,7 @@ import java.util.ArrayList;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class ExerciseResultsFragment extends Fragment {
+public class ExerciseCongratulationsFragment extends Fragment {
 
     private View view;
     private Button button;
@@ -24,14 +24,14 @@ public class ExerciseResultsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_exercise_results, container, false);
+        view = inflater.inflate(R.layout.fragment_congratulations, container, false);
 
-        button = (Button) view.findViewById(R.id.return_home_button);
+        button = (Button) view.findViewById(R.id.finish_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 PatientActivity activity = (PatientActivity) getActivity();
-                activity.transitionToFragment(new ExerciseRealTimeFragment());
+                activity.transitionToFragment(new PatientHomeFragment());
             }
         });
 

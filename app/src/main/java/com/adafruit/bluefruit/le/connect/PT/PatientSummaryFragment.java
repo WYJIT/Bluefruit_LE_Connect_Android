@@ -56,16 +56,19 @@ public class PatientSummaryFragment extends Fragment {
         PTexercisesAdapter = new PTExercisesAdapter(getContext(), exercises);
         exercisesListView = (ListView) view.findViewById(R.id.patient_exercise_list);
         exercisesListView.setAdapter(PTexercisesAdapter);
-        exercises.add(new Exercise("Bicep curls", false));
-        exercises.add(new Exercise("Arm circles", true));
-        exercises.add(new Exercise("Side raises", true));
-        exercises.add(new Exercise("Bent over reverse fly", true));
+        exercises.add(new Exercise("Squat", false, false));
+        exercises.add(new Exercise("Straight Leg Raise", true, false));
+        exercises.add(new Exercise("Recovery", true, false));
         setListViewHeightBasedOnChildren(exercisesListView);
         PTexercisesAdapter.notifyDataSetChanged();
 
-        final EditText noteTage = (EditText) view.findViewById(R.id.edit_note);
-        final Button b = (Button) view.findViewById(R.id.enter_note);
-        b.setVisibility(View.INVISIBLE);
+        final Button b = (Button) view.findViewById(R.id.more_info);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((PTActivity)getActivity()).transitionToFragment(new PredictionFragment());
+            }
+        });
 
         TextView nameTag = (TextView) view.findViewById(R.id.patient_name);
         TextView ageTag = (TextView) view.findViewById(R.id.age);
@@ -79,20 +82,6 @@ public class PatientSummaryFragment extends Fragment {
         weightTag.setText(Integer.toString(weight) + " lbs");
         heightTag.setText(Integer.toString(height) + " feet");
 
-        noteTage.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                noteTage.setCursorVisible(true);
-                b.setVisibility(View.VISIBLE);
-            }
-        });
-
-        b.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                noteTage.setCursorVisible(false);
-                noteTage.setInputType(InputType.TYPE_NULL);
-                b.setVisibility(View.INVISIBLE);
-            }
-        });
 
         return view;
     }

@@ -42,11 +42,20 @@ public class ExercisesAdapter extends ArrayAdapter<Exercise> {
         boolean completed = exercise.getCompleted();
         checkBox.setChecked(completed);
 
-        if (!completed) {
+        if (!completed && !exercise.getIsLegs()) {
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     patientActivity.transitionToFragment(new ExerciseSummaryFragment());
+                }
+            });
+        }
+
+        if (exercise.getIsLegs()) {
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    patientActivity.transitionToFragment(new LegSummaryFragment());
                 }
             });
         }

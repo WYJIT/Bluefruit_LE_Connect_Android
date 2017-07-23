@@ -7,10 +7,12 @@ package com.adafruit.bluefruit.le.connect.Patient;
 public class Exercise {
     private String name;
     private Boolean completed;
+    private Boolean isLegs;
 
-    public Exercise(String name, Boolean completed) {
+    public Exercise(String name, Boolean completed, Boolean isLegs) {
         this.name = name;
         this.completed = completed;
+        this.isLegs = isLegs;
     }
 
     public Boolean getCompleted() {
@@ -19,6 +21,10 @@ public class Exercise {
 
     public void setCompleted(Boolean completed) {
         this.completed = completed;
+    }
+
+    public Boolean getIsLegs() {
+        return this.isLegs;
     }
 
     public String getName() {

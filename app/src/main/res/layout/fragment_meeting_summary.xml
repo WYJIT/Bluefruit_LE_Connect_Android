@@ -1,7 +1,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#262626">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,81 +18,76 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="20dp"
             android:text="Wilson" />
 
-        <ImageView
-            android:id="@+id/patient_image"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_below="@id/patient_name"
-            android:src="@drawable/exercise"/>
 
         <TextView
             android:id="@+id/gender"
-            android:layout_toRightOf="@+id/patient_image"
             android:layout_below="@id/patient_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
             android:text="male"/>
 
         <TextView
             android:id="@+id/age"
-            android:layout_toRightOf="@+id/patient_image"
             android:layout_below="@id/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
             android:text="63 years old"/>
 
         <TextView
             android:id="@+id/weight"
-            android:layout_toRightOf="@+id/patient_image"
             android:layout_below="@id/age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
             android:text="152 lbs"/>
 
         <TextView
             android:id="@+id/height"
-            android:layout_toRightOf="@+id/patient_image"
             android:layout_below="@id/weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
             android:text="5 feet 7 inches"/>
 
 
-        <TextView
+        <EditText
             android:id="@+id/injury"
-            android:layout_toRightOf="@+id/patient_image"
             android:layout_below="@id/height"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
-            android:text="Injury description"/>
+            android:text="Knee unable to extend past 20 degrees, assist required to stand, pt. Tolerated a 30 minute session of pressure treatment before crying, reduced swelling in
+"/>
 
         <TextView
             android:id="@+id/progress"
-            android:layout_below="@id/patient_image"
+            android:layout_below="@id/injury"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
             android:text="Progress"/>
 
@@ -111,6 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
+            android:textColor="#f2f2f2"
             android:textSize="17dp"
             android:text="Exercises"/>
 
@@ -120,40 +117,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/exercises"
+            android:textColor="#f2f2f2"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
         </ListView>
 
-        <TextView
-            android:id="@+id/note"
-            android:layout_below="@id/patient_exercise_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:textSize="17dp"
-            android:text="Notes"/>
-
-
-        <EditText
-            android:id="@+id/edit_note"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13dp"
-            android:text="example notes"
-            android:layout_below="@+id/note"
-            android:layout_alignStart="@+id/note"
-            android:layout_alignEnd="@+id/weight" />
 
         <Button
-            android:id="@+id/enter_note"
+            android:id="@+id/more_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="10dp"
-            android:text="Enter"
-            android:layout_alignBaseline="@+id/edit_note"
-            android:layout_alignBottom="@+id/edit_note"
-            android:layout_alignParentEnd="true"
+            android:text="More Info"
+            android:layout_below="@id/patient_exercise_list"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#262626"
+            android:textColor="#0099ff"
             android:layout_marginEnd="15dp" />
 
     </RelativeLayout>

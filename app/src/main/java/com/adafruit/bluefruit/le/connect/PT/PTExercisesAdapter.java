@@ -1,6 +1,7 @@
 package com.adafruit.bluefruit.le.connect.PT;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,7 @@ public class PTExercisesAdapter extends ArrayAdapter<Exercise> {
         checkBox.setVisibility(View.GONE);
         // Populate the data into the template view using the data object
         name.setText(exercise.getName());
-
+        name.setTextColor(Color.parseColor("#f2f2f2"));
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
